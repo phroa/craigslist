@@ -1,0 +1,9 @@
+[Unit]
+Description=craigslist scraper
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/scrapy runspider scraper.py
+WorkingDirectory=/home/squidbox/code/craigslist-live
+User=squidbox
+Group=squidbox
